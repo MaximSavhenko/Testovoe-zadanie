@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
         flex-wrap: wrap;
         margin: 0 -30px;
         @include b(tablet) {
-            margin-right: 10px;
+            margin: 0 10px;
         }
     }
 
@@ -85,7 +85,10 @@ h1, h2, h3, h4, h5, h6, ul , p {
         width: 25%;
         margin-bottom: 30px;
         @include b(tablet) {
-            padding-right: 10px;
+            padding: 0 10px;
+        }
+        @include b(710) {
+            width: 50%;
         }
     }
 
@@ -98,8 +101,8 @@ h1, h2, h3, h4, h5, h6, ul , p {
         justify-content: flex-end;
         height: 100%;
         position: relative;
-        @include b(tablet) {
-            
+        @include b(mobile) {
+            padding: 20px 10px;
         }
 
         &:hover {
@@ -159,16 +162,25 @@ h1, h2, h3, h4, h5, h6, ul , p {
         @include b(tablet) {
             font-size: 13px;
         }
+        @include b(mobile) {
+            margin-bottom: 10px;
+        }
     }
 
     &__item-link {
         text-decoration: underline;
         font-size: 16px;
         margin-bottom: 20px;
+        @include b(mobile) {
+            margin-bottom: 10px;
+        }
     }
 
     &__item-discount-btn {
         display: flex;
+        @include b(mobile) {
+            flex-direction: column;
+        }
     }
 
     &__item-prices {
@@ -176,6 +188,9 @@ h1, h2, h3, h4, h5, h6, ul , p {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        @include b(mobile) {
+            margin-bottom: 10px;
+        }
     }
  
     &__item-discount {
@@ -195,6 +210,9 @@ h1, h2, h3, h4, h5, h6, ul , p {
 
     &__item-btn {
         width: 155px;
+        @include b(mobile) {
+            width: 100%;
+        }
     }
 }
 

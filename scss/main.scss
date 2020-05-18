@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, h6, ul , p {
     border: none;
     background-color: #ffd304;
     text-align: center;
-    // padding: 0 20px;
     color: #000;
     cursor: pointer;
     transition: all .3s;
@@ -132,10 +131,12 @@ h1, h2, h3, h4, h5, h6, ul , p {
         align-items: center;
         border-bottom-right-radius: 30px;
         cursor: pointer;
+        max-width: 100%;
         span {
             font-size: 14px;
             text-transform: uppercase;
             color: #fff;
+            max-width: 100%;
         }
     }
 
@@ -183,6 +184,11 @@ h1, h2, h3, h4, h5, h6, ul , p {
         }
         @include b(378) {
             font-size: 13px;
+        }
+
+        &:hover {
+            color: #00FF7F;
+            @include trs;  
         }
     }
 

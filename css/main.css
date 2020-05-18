@@ -130,11 +130,13 @@ h1, h2, h3, h4, h5, h6, ul, p {
   align-items: center;
   border-bottom-right-radius: 30px;
   cursor: pointer;
+  max-width: 100%;
 }
 .catalog__rebate span, .catalog__sentence span {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
+  max-width: 100%;
 }
 .catalog__sentence {
   background-color: #ffd304;
@@ -185,6 +187,10 @@ h1, h2, h3, h4, h5, h6, ul, p {
   .catalog__item-link {
     font-size: 13px;
   }
+}
+.catalog__item-link:hover {
+  color: #00FF7F;
+  transition: all 0.3s;
 }
 .catalog__item-discount-btn {
   display: flex;

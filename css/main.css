@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 }
 @media (max-width: 1024px) {
   .catalog__wrap {
-    margin: 0 10px;
+    margin: 0 -10px;
   }
 }
 .catalog__item {
@@ -88,6 +88,11 @@ h1, h2, h3, h4, h5, h6, ul, p {
     width: 50%;
   }
 }
+@media (max-width: 378px) {
+  .catalog__item {
+    margin-bottom: 20px;
+  }
+}
 .catalog__inner {
   border: 1px solid #e2e2e2;
   padding: 10px;
@@ -101,6 +106,11 @@ h1, h2, h3, h4, h5, h6, ul, p {
 @media (max-width: 768px) {
   .catalog__inner {
     padding: 20px 10px;
+  }
+}
+@media (max-width: 378px) {
+  .catalog__inner {
+    padding: 30px 10px 10px 10px;
   }
 }
 .catalog__inner:hover {
@@ -168,6 +178,11 @@ h1, h2, h3, h4, h5, h6, ul, p {
 @media (max-width: 768px) {
   .catalog__item-link {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 378px) {
+  .catalog__item-link {
+    font-size: 13px;
   }
 }
 .catalog__item-discount-btn {

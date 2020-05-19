@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   top: -2px;
   left: -2px;
   background-color: #f30a2b;
-  width: 60px;
+  padding: 0 15px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -156,6 +156,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   max-width: 100%;
   max-height: 100%;
   width: auto;
+  height: auto;
 }
 .catalog__item-caption {
   font-size: 16px;
@@ -173,6 +174,10 @@ h1, h2, h3, h4, h5, h6, ul, p {
     margin-bottom: 10px;
   }
 }
+.catalog__item-caption:hover {
+  color: #00BFFF;
+  transition: all 0.3s;
+}
 .catalog__item-link {
   text-decoration: underline;
   font-size: 16px;
@@ -189,7 +194,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   }
 }
 .catalog__item-link:hover {
-  color: #00FF7F;
+  color: #00BFFF;
   transition: all 0.3s;
 }
 .catalog__item-discount-btn {
@@ -204,7 +209,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100% - 20px);
 }
 @media (max-width: 768px) {
   .catalog__item-prices {
@@ -218,11 +223,9 @@ h1, h2, h3, h4, h5, h6, ul, p {
 .catalog__item-price {
   font-weight: 600;
   font-size: 18px;
-  display: flex;
 }
-.catalog__item-price span {
-  display: inline-block;
-  font-size: 9px;
+.catalog__item-price sup {
+  font-size: 10px;
 }
 .catalog__item-btn {
   width: 155px;

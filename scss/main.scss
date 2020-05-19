@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
         top: -2px;
         left: -2px;
         background-color: #f30a2b;
-        width: 60px;
+        padding: 0 15px;
         height: 30px;
         display: flex;
         justify-content: center;
@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
         border-bottom-right-radius: 30px;
         cursor: pointer;
         max-width: 100%;
+
         span {
             font-size: 14px;
             text-transform: uppercase;
@@ -160,6 +161,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
         max-width: 100%;
         max-height: 100%;
         width: auto;
+        height: auto;
     }
 
     &__item-caption {
@@ -172,6 +174,11 @@ h1, h2, h3, h4, h5, h6, ul , p {
         }
         @include b(mobile) {
             margin-bottom: 10px;
+        }
+
+        &:hover {
+            color: #00BFFF;
+            @include trs;  
         }
     }
 
@@ -187,7 +194,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
         }
 
         &:hover {
-            color: #00FF7F;
+            color: #00BFFF;
             @include trs;  
         }
     }
@@ -203,7 +210,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: calc(100% - 20px);
         @include b(mobile) {
             margin-bottom: 10px;
         }
@@ -217,10 +224,8 @@ h1, h2, h3, h4, h5, h6, ul , p {
     &__item-price {
         font-weight: 600;
         font-size: 18px;
-        display: flex;
-        span {
-            display: inline-block;
-            font-size: 9px;
+        sup {
+            font-size: 10px;
         }
     }
 
